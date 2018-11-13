@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+}
+
+span{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    margin: 50px 50px;
+    padding: 20px;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+div{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition-timing-function: ease-in-out;
+}
+
+div:nth-child(2){
+    transition-duration: 1s;
+}
+div:nth-child(3){
+    transition-duration: 1s;
+    transition-delay: 500ms;
+}
+div:nth-child(4){
+    transition-duration: 1s;
+    transition-delay: 700ms;
+}
+div:nth-child(5){
+    transition-duration: 1.5s;
+    transition-delay: 1s;
+}
+div:nth-child(6){
+     transition-duration: 1.5s;
+     transition-delay: 1s;
+}
+div:nth-child(7){
+    transition-duration: 1s;
+    transition-delay: 1500ms;
+}
+
+
+span:hover ~ div:nth-child(2){
+    width: 20px;
+    height: 10px;
+    background-color: brown;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%) scale(20);
+    opacity: 1;
+
+}
+
+span:hover ~ div:nth-child(3){
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    left: 50%;
+    bottom: 76.5%;
+    transform: translate(-50%, -50%) scale(20);
+    z-index: 1;
+    opacity: 1;
+
+}
+
+span:hover ~ div:nth-child(4){
+    width: 7px;
+    height: 10px;
+    left: 50%;
+    bottom: 41.5%;
+    transform: translate(-50%, -60%) scale(10);
+    background-color: #444444;
+    opacity: 1;
+
+}
+
+span:hover ~ div:nth-child(5){
+    width: 5px;
+    height: 5px;
+    background-color: yellow;
+    left: 42%;
+    bottom: 54%;
+    transform: translate(-50%, -50%) scale(13);
+    opacity: 1;
+
+}
+
+span:hover ~ div:nth-child(6){
+    width: 5px;
+    height: 5px;
+    background-color: yellow;
+    left: 57%;
+    bottom: 54%;
+    transform: translate(-50%, -50%) scale(13);
+    opacity: 1;
+
+}
+
+span:hover ~ div:nth-child(7){
+    width: 5px;
+    height: 10px;
+    background-color: #444444;
+    left: 57%;
+    bottom: 75%;
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 1;
+
+}
+
+
+
+
+
+

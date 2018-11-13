@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 10px;
+}
+
+header{
+    text-transform: uppercase;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header div{
+    font-size: 1.5rem;
+    height: 40vh;
+}
+
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul {
+    list-style: none;
+    float: left;
+}
+
+li{
+    padding: 0.5rem;
+}
+
+i{
+    border-right: 2px solid black;
+    width: 70px;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    line-height: 2rem;
+}
+
+i:hover{
+    margin-right: 50px;
+}
+
+.img{
+    background-image: url("./piano-1099352_1920.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+    height: 90%;
+    float: right;
+}
+
+p{
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgba(45,65,245,0.5);
+    line-height: 80px;
+    margin-top: 20px;
+}
+
+@media all and (max-width: 950px){
+    nav{
+        max-width: 20%;
+        background-color: black;
+        color: white;
+    }
+}

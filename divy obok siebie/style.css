@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+}
+
+div{
+    height: 20vh;
+}
+
+.s1{
+    width: 70vw;
+    background-color: #bada55;
+}
+
+.s2{
+    width: 30vw;
+    background-color: royalblue;
+}
